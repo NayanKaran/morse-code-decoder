@@ -104,3 +104,12 @@ case morse_code
     puts "NOT FOUND"
   end
 end
+def decode_word(morse_code)
+  morse_code.split(" ").map { |char| decode_char(char) }.join("")
+end
+
+def decode(morse_code)
+  morse_code.split("   ").map { |word| decode_word(word) }.join(" ")
+end
+
+puts decode("      .-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")

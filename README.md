@@ -14,6 +14,7 @@ To get a local copy up and running follow these simple example steps.
 
 - Git
 - Code Editor. e.g., VS Code
+- Ruby
 
 ### Setup
 
@@ -21,7 +22,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Usage
 
-- Open the index.html file.
+- ruby morse-decoder.rb
 
 ## Authors
 

@@ -49,14 +49,14 @@ MORSE_CODE = {
   '-.--.-' => '-',
   '.-...' => '&',
   '---.' => '+'
-}
+}.freeze
 
 def decode_char(morse_code)
-  return MORSE_CODE[morse_code]
+  MORSE_CODE[morse_code]
 end
 
 def decode_word(morse_code)
-  morse_code.split(' ').map { |char| decode_char(char) }.join('')
+  morse_code.split.map { |char| decode_char(char) }.join
 end
 
 def decode(morse_code)
